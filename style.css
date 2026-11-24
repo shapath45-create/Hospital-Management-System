@@ -1,0 +1,521 @@
+/* Common Website Design */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf7f7;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #176b70;
+}
+
+button {
+    background-color: #168b91;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #116b70;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}/* Dashboard Header Design */
+
+.main-header {
+    background-color: #176b70;
+    color: white;
+    padding: 25px 40px;
+    text-align: center;
+}
+
+.main-header h1 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.main-header p {
+    color: #eaf7f7;
+    font-size: 15px;
+}
+/* Navigation Menu Design */
+
+.navbar {
+    background-color: white;
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #176b70;
+    font-weight: bold;
+    margin: 0 15px;
+    font-size: 15px;
+}
+
+.navbar a:hover {
+    color: #168b91;
+    text-decoration: underline;
+}
+/* Welcome Section Design */
+
+.welcome-section {
+    background-color: white;
+    margin: 30px 40px;
+    padding: 35px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.welcome-section h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.welcome-section p {
+    color: #666;
+    font-size: 16px;
+}
+/* Patient Services Design */
+
+.services-section {
+    margin: 30px 40px;
+}
+
+.services-section > h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card h3 {
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: #666;
+    margin-bottom: 18px;
+}
+
+.service-card a {
+    display: inline-block;
+    background-color: #168b91;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.service-card a:hover {
+    background-color: #116b70;
+}
+/* Quick Actions Design */
+
+.quick-section {
+    margin: 35px 40px;
+}
+
+.quick-section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.quick-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.quick-buttons a {
+    background-color: #176b70;
+    color: white;
+    text-decoration: none;
+    padding: 13px 22px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.quick-buttons a:hover {
+    background-color: #168b91;
+}
+/* Footer Design */
+
+.main-footer {
+    background-color: #176b70;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+.main-footer p {
+    margin: 8px;
+    color: white;
+} 
+/* Patient Login Page Design */
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-container {
+    background-color: white;
+    width: 400px;
+    max-width: 90%;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 30px auto;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.login-header h1 {
+    margin-bottom: 10px;
+}
+
+.login-header p {
+    color: #666;
+}
+
+.login-form label {
+    font-weight: bold;
+    color: #176b70;
+}
+
+.login-form input {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.login-form button {
+    margin-top: 10px;
+}
+
+.login-container > p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-container a {
+    color: #168b91;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+} 
+/* Patient Registration Page Design */
+
+.register-page {
+    min-height: 100vh;
+    background-color: #eaf7f7;
+    padding: 40px 15px;
+}
+
+.register-container {
+    background-color: white;
+    width: 550px;
+    max-width: 100%;
+    margin: auto;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.register-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.register-header h1 {
+    margin-bottom: 10px;
+}
+
+.register-header p {
+    color: #666;
+}
+
+.register-form label {
+    display: inline-block;
+    font-weight: bold;
+    color: #176b70;
+    margin-bottom: 5px;
+}
+
+.register-form input,
+.register-form select,
+.register-form textarea {
+    width: 100%;
+    margin-bottom: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.register-form textarea {
+    resize: vertical;
+}
+
+.register-form button {
+    margin-top: 10px;
+}
+
+.register-container > p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-container a {
+    color: #168b91;
+    text-decoration: none;
+}
+
+.register-container a:hover {
+    text-decoration: underline;
+} 
+/* My Appointments Page Design */
+
+.appointments-page {
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.appointments-container {
+    background-color: white;
+    max-width: 1100px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.appointments-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.appointments-header h1 {
+    margin-bottom: 10px;
+}
+
+.appointments-header p {
+    color: #666;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.appointment-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.appointment-table th {
+    background-color: #176b70;
+    color: white;
+    padding: 15px;
+}
+
+.appointment-table td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.appointment-table tr:hover {
+    background-color: #eaf7f7;
+}
+
+.appointment-links {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.appointment-links a {
+    background-color: #168b91;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.appointment-links a:hover {
+    background-color: #116b70;
+}
+/* Book Appointment Page Design */
+
+.booking-page {
+    min-height: 100vh;
+    padding: 40px 15px;
+}
+
+.booking-container {
+    background-color: white;
+    width: 600px;
+    max-width: 100%;
+    margin: auto;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.booking-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.booking-header h1 {
+    margin-bottom: 10px;
+}
+
+.booking-header p {
+    color: #666;
+}
+
+.booking-form label {
+    display: inline-block;
+    font-weight: bold;
+    color: #176b70;
+    margin-bottom: 5px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    width: 100%;
+    margin-bottom: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.booking-form textarea {
+    resize: vertical;
+}
+
+.booking-form button {
+    margin-top: 10px;
+}
+
+.booking-container > p {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.booking-container a {
+    color: #168b91;
+    text-decoration: none;
+}
+
+.booking-container a:hover {
+    text-decoration: underline;
+}
+
+/* Patient Profile Page Design */
+
+.profile-page {
+    min-height: 100vh;
+    padding: 40px 15px;
+}
+
+.profile-container {
+    background-color: white;
+    width: 550px;
+    max-width: 100%;
+    margin: auto;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.profile-header h1 {
+    margin-bottom: 10px;
+}
+
+.profile-header p {
+    color: #666;
+}
+
+.profile-form label {
+    display: inline-block;
+    font-weight: bold;
+    color: #176b70;
+    margin-bottom: 5px;
+}
+
+.profile-form input,
+.profile-form textarea {
+    width: 100%;
+    margin-bottom: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.profile-form textarea {
+    resize: vertical;
+}
+
+.profile-form button {
+    margin-top: 10px;
+}
+
+.profile-container > p {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.profile-container a {
+    color: #168b91;
+    text-decoration: none;
+}
+
+.profile-container a:hover {
+    text-decoration: underline;
+}

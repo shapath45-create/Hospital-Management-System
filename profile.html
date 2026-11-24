@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Patient Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="profile-page">
+
+  <div class="profile-container">
+
+    <div class="profile-header">
+        <h1>My Profile</h1>
+        <p>View or update your personal information.</p>
+    </div>
+
+    <form action="#" method="post" class="profile-form">
+
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name"
+               value="Mehedi Hassan" required>
+
+        <br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"
+               value="patient@example.com" required>
+
+        <br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone"
+               value="01700000000" required>
+
+        <br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address"
+                  rows="3" cols="30">Dhaka, Bangladesh</textarea>
+
+        <br><br>
+
+        <button type="submit">Update Profile</button>
+        <button type="reset">Reset</button>
+
+    </form>
+       </div>
+    <p><a href="index.html">Back to Dashboard</a></p>
+
+</body>
+</html>

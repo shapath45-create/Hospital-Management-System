@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Book Appointment</title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="booking-page">
+<div class="booking-container">
+
+    <div class="booking-header">
+        <h1>Book an Appointment</h1>
+        <p>Fill in the form to request an appointment.</p>
+    </div>
+
+    <form action="#" method="post" class="booking-form">
+
+        <label for="patient_name">Patient Name:</label><br>
+        <input type="text" id="patient_name"
+               name="patient_name" required>
+
+        <br><br>
+
+        <label for="department">Select Department:</label><br>
+
+        <select id="department" name="department" required>
+            <option value="">Choose Department</option>
+            <option value="medicine">Medicine</option>
+            <option value="cardiology">Cardiology</option>
+            <option value="orthopedics">Orthopedics</option>
+            <option value="dermatology">Dermatology</option>
+        </select>
+
+        <br><br>
+
+        <label for="doctor">Select Doctor:</label><br>
+
+        <select id="doctor" name="doctor" required>
+            <option value="">Choose Doctor</option>
+            <option value="doctor1">Dr. Rahman</option>
+            <option value="doctor2">Dr. Ahmed</option>
+            <option value="doctor3">Dr. Karim</option>
+        </select>
+
+        <br><br>
+
+        <label for="date">Appointment Date:</label><br>
+        <input type="date" id="date" name="date" required>
+
+        <br><br>
+
+        <label for="time">Preferred Time:</label><br>
+
+        <select id="time" name="time" required>
+            <option value="">Choose Time</option>
+            <option value="10:00">10:00 AM</option>
+            <option value="11:00">11:00 AM</option>
+            <option value="12:00">12:00 PM</option>
+            <option value="14:00">2:00 PM</option>
+        </select>
+
+        <br><br>
+
+        <label for="reason">Reason for Appointment:</label><br>
+
+        <textarea id="reason" name="reason"
+                  rows="4" cols="30"
+                  placeholder="Describe your problem"></textarea>
+
+        <br><br>
+
+        <button type="submit">Request Appointment</button>
+        <button type="reset">Clear Form</button>
+
+    </form>
+    </div>
+
+    <p><a href="index.html">Back to Dashboard</a></p>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #e8f1f2;
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 20px;
+    color: #1f2937;
+}
+
+.doctor-container {
+    max-width: 480px;
+    margin: 70px auto 0 auto;
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(15, 118, 110, 0.08);
+    box-sizing: border-box;
+}
+
+.title-box {
+    text-align: center;
+    border: 1px solid #d7e5e6;
+    background-color: #f4f9f9;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.title-box h3 {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0f766e;
+}
+
+.title-box h1 {
+    margin: 0;
+    font-size: 28px;
+    text-align: center;
+    color: #008080;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 8px 6px;
+    vertical-align: middle;
+}
+
+label {
+    font-weight: 600;
+    color: #0f766e;
+}
+
+input[type="text"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #1f2937;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+select:focus {
+    outline: none;
+    border-color: #0f766e;
+}
+
+.btn-group {
+    padding-top: 14px;
+}
+
+.submit-btn,
+.reset-btn {
+    margin-top: 20px;
+    padding: 9px 22px;
+    font-size: 15px;
+    border: 1px solid #0f766e;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.submit-btn {
+    background-color: #0f766e;
+    color: #ffffff;
+}
+
+.submit-btn:hover {
+    background-color: #115e59;
+}
+
+.reset-btn {
+    background-color: #f0f7f7;
+    color: #0f766e;
+}
+
+.reset-btn:hover {
+    background-color: #dff0f0;
+}
+
+.back-link {
+    text-align: center;
+    margin-top: 18px;
+}
+
+.back-link a {
+    color: #0f766e;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back-link a:hover {
+    text-decoration: underline;
+}
+
+.back-btn {
+    width: 68px;
+    height: 68px;
+    margin-top: -60px;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding: 10px;
+    background-color: #f4f9f9;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.back-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.back-btn:hover {
+    background-color: #e6f2f2;
+}
