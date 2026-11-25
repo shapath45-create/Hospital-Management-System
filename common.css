@@ -1,0 +1,352 @@
+/* Common CSS for Hospital Management System */
+
+/* ========== 1. Basic Design ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf7f7;
+    color: #333;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+/* ========== 2. Header ========== */
+.main-header {
+    background-color: #176b70;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.main-header h1 {
+    color: white;
+    margin-bottom: 8px;
+}
+
+.main-header p {
+    color: #eaf7f7;
+    font-size: 15px;
+}
+
+/* ========== 3. Navigation Bar ========== */
+.navbar {
+    background-color: white;
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #176b70;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+.navbar a:hover {
+    color: #168b91;
+}
+
+/* ========== 4. Page Title ========== */
+.page-title {
+    color: #176b70;
+    text-align: center;
+    margin: 25px 0;
+}
+
+/* ========== 5. Login and Submit Buttons ========== */
+.submit-btn,
+.login-btn {
+    background-color: #168b91;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover,
+.login-btn:hover {
+    background-color: #116b70;
+}
+
+/* ========== 6. Back Button ========== */
+.back-btn {
+    display: inline-block;
+    background-color: #176b70;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.back-btn:hover {
+    background-color: #116b70;
+}
+
+/* ========== 7. Footer ========== */
+.main-footer {
+    background-color: #176b70;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.main-footer p {
+    color: white;
+    margin: 5px;
+}
+
+/* ========== 8. Home Page ========== */
+.welcome-section {
+    background-color: white;
+    margin: 30px 40px;
+    padding: 35px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.welcome-section h2 {
+    color: #176b70;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.welcome-section p {
+    color: #666;
+    font-size: 16px;
+}
+
+.services-section,
+.quick-section {
+    margin: 30px 40px;
+}
+
+.services-section > h3,
+.quick-section h3 {
+    color: #176b70;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card h3 {
+    color: #176b70;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: #666;
+    margin-bottom: 18px;
+}
+
+.service-card a {
+    display: inline-block;
+    background-color: #168b91;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.service-card a:hover {
+    background-color: #116b70;
+}
+
+.quick-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.quick-buttons a {
+    background-color: #176b70;
+    color: white;
+    text-decoration: none;
+    padding: 13px 22px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.quick-buttons a:hover {
+    background-color: #168b91;
+}
+
+/* ========== 9. Form Pages (Login, Register, Booking, Profile) ========== */
+.login-page,
+.register-page,
+.booking-page,
+.profile-page,
+.appointments-page {
+    min-height: 70vh;
+    padding: 40px 15px;
+}
+
+.login-container,
+.register-container,
+.booking-container,
+.profile-container,
+.appointments-container {
+    background-color: white;
+    max-width: 100%;
+    margin: auto;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.login-container    { width: 400px; }
+.register-container { width: 550px; }
+.booking-container  { width: 600px; }
+.profile-container  { width: 550px; }
+.appointments-container { max-width: 1100px; }
+
+.login-header,
+.register-header,
+.booking-header,
+.profile-header,
+.appointments-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.login-header h1,
+.register-header h1,
+.booking-header h1,
+.profile-header h1,
+.appointments-header h1 {
+    color: #176b70;
+    margin-bottom: 10px;
+}
+
+.login-header p,
+.register-header p,
+.booking-header p,
+.profile-header p,
+.appointments-header p {
+    color: #666;
+}
+
+.login-form label,
+.register-form label,
+.booking-form label,
+.profile-form label {
+    display: inline-block;
+    font-weight: bold;
+    color: #176b70;
+    margin-bottom: 5px;
+}
+
+.login-form input,
+.register-form input,
+.register-form select,
+.register-form textarea,
+.booking-form input,
+.booking-form select,
+.booking-form textarea,
+.profile-form input,
+.profile-form textarea {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.register-form textarea,
+.booking-form textarea,
+.profile-form textarea {
+    resize: vertical;
+}
+
+.login-form .submit-btn,
+.login-form .login-btn,
+.register-form .submit-btn,
+.booking-form .submit-btn,
+.profile-form .submit-btn {
+    margin-top: 10px;
+}
+
+.login-container > p,
+.register-container > p,
+.booking-container > p,
+.profile-container > p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-container a,
+.register-container a,
+.booking-container a,
+.profile-container a {
+    color: #168b91;
+    text-decoration: none;
+}
+
+.login-container a:hover,
+.register-container a:hover,
+.booking-container a:hover,
+.profile-container a:hover {
+    text-decoration: underline;
+}
+
+/* ========== 10. Appointments Table ========== */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.appointment-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.appointment-table th {
+    background-color: #176b70;
+    color: white;
+    padding: 15px;
+}
+
+.appointment-table td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.appointment-table tr:hover {
+    background-color: #eaf7f7;
+}
+
+.appointment-links {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
