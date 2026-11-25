@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Details</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>Check Patient Details</h1>
+    </header>
+
+    <div class="details-container">
+        <form class="search-box" action="#" method="get">
+            <label for="patientId">Patient ID:</label>
+            <input type="text" id="patientId" name="patientId" placeholder="Enter Patient ID (e.g., PAT-301)">
+            <button type="submit" class="submit-btn">Search</button>
+        </form>
+
+        <div class="table-container">
+            <table class="appointment-table">
+                <thead>
+                    <tr>
+                        <th>Patient ID</th>
+                        <th>Patient Name</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Phone</th>
+                        <th>Condition</th>
+                        <th>Appointed Doctor ID</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>PAT-301</td>
+                        <td>Rafiqul Islam</td>
+                        <td>42</td>
+                        <td>Male</td>
+                        <td>01711-908070</td>
+                        <td>Chest Pain</td>
+                        <td>DOC-101</td>
+                    </tr>
+                    <tr>
+                        <td>PAT-302</td>
+                        <td>Sadia Afrin</td>
+                        <td>29</td>
+                        <td>Female</td>
+                        <td>01817-654321</td>
+                        <td>Migraine</td>
+                        <td>DOC-102</td>
+                    </tr>
+                    <tr>
+                        <td>PAT-303</td>
+                        <td>Mahmudul Hasan</td>
+                        <td>54</td>
+                        <td>Male</td>
+                        <td>01913-246810</td>
+                        <td>Knee Fracture</td>
+                        <td>DOC-103</td>
+                    </tr>
+                    <tr>
+                        <td>PAT-304</td>
+                        <td>Afsana Mim</td>
+                        <td>8</td>
+                        <td>Female</td>
+                        <td>01675-135790</td>
+                        <td>Viral Fever</td>
+                        <td>DOC-104</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <a href="admin.html" class="back-btn" aria-label="Back to Admin Panel" title="Back to Admin Panel">
+            Back
+        </a>
+    </div>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Hazratt Muhammad (sa.) International Hospital.</p>
+        <p>All rights reserved</p>
+    </footer>
+
+</body>
+</html>

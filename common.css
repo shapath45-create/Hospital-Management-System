@@ -11,6 +11,9 @@ body {
     font-family: Arial, sans-serif;
     background-color: #eaf7f7;
     color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 input, select, textarea {
@@ -349,4 +352,217 @@ input, select, textarea {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
+}
+
+/* ========== Admin Panel Specific Styles ========== */
+.admin-container {
+    max-width: 480px;
+    width: 100%;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.admin-container .submit-btn,
+.admin-container .login-btn {
+    display: inline-block;
+    width: 240px;
+    text-decoration: none;
+    margin-bottom: 16px;
+}
+
+.add-toggle {
+    display: none;
+}
+
+.add-options {
+    display: none;
+    margin-bottom: 16px;
+}
+
+.add-toggle:checked ~ .add-options {
+    display: block;
+}
+
+.role-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: #176b70;
+    margin-right: 14px;
+    font-weight: bold;
+}
+
+.role-link::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 2px solid #176b70;
+    border-radius: 50%;
+    background-color: transparent;
+    display: inline-block;
+}
+
+.role-link:hover {
+    color: #168b91;
+}
+
+.back-btn.logout-btn {
+    position: fixed;
+    left: 24px;
+    bottom: 24px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logout-btn {
+    position: fixed;
+    left: 24px;
+    bottom: 24px;
+    margin-bottom: 0;
+    z-index: 100;
+}
+
+.main-footer {
+    position: relative;
+    z-index: 1;
+}
+/* ========== Add Doctor Page Styles ========== */
+.doctor-container {
+    max-width: 560px;
+    width: 100%;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.form-table td {
+    padding: 10px 8px;
+    vertical-align: middle;
+}
+
+.form-table td:first-child {
+    width: 120px;
+    font-weight: bold;
+    color: #176b70;
+    text-align: left;
+}
+
+.form-table input,
+.form-table select {
+    width: 100%;
+}
+
+.btn-group {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding-top: 8px;
+}
+
+.reset-btn {
+    background-color: #e6f2f2;
+    color: #176b70;
+    border: 1px solid #168b91;
+    padding: 10px 22px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.reset-btn:hover {
+    background-color: #d0e8e8;
+}
+
+.doctor-container .back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.doctor-container .back-btn img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+/* ========== Manage Doctors Page Styles ========== */
+.manage-container {
+    max-width: 960px;
+    width: 100%;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.remove-btn {
+    display: inline-block;
+    background-color: #c0392b;
+    color: white;
+    text-decoration: none;
+    padding: 7px 14px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.remove-btn:hover {
+    background-color: #962d22;
+}
+
+.manage-container .back-btn {
+    margin-top: 24px;
+}
+
+/* ========== Check Details Page Styles ========== */
+.details-container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+    padding: 16px;
+    background-color: #eaf7f7;
+    border-radius: 8px;
+}
+
+.search-box label {
+    font-weight: bold;
+    color: #176b70;
+}
+
+.search-box input[type="text"] {
+    flex: 1;
+    min-width: 220px;
+}
+
+.details-container .back-btn {
+    margin-top: 24px;
 }
