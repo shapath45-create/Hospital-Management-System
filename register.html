@@ -4,14 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Patient Registration</title> 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="common.css">
 </head>
 
 <body class="register-page">
+<header class="main-header">
+    <h1>Hospital Management System</h1>
+    <p>Patient Portal</p>
+</header>
+
+<nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="register.html">Register</a>
+    <a href="login.html">Login</a>
+    <a href="appointment.html">Book Appointment</a>
+    <a href="my-appointments.html">My Appointments</a>
+    <a href="profile.html">My Profile</a>
+</nav>
 
   <div class="register-container">
 
-    <div class="register-header">
+    <div class="register-header page-title">
         <h1>Patient Registration</h1>
         <p>Create a new patient account.</p>
     </div>
@@ -65,17 +78,21 @@
                name="confirm_password" required>
         <br><br>
 
-        <button type="submit">Register</button>
+        <button type="submit" class="submit-btn">Register</button>
         <button type="reset">Clear Form</button>
 
     </form>
     </div>
 
     <p>Already have an account?
-        <a href="login (1).html">Login Here</a>
-    </p>
-
-    <p><a href="index.html">Back to Dashboard</a></p>
+      <a href="login.html">Login Here</a>
+   <p>
+    <a href="index.html" class="back-btn">Back to Dashboard</a>
+</p>
+<footer class="main-footer">
+    <p>Hospital Management System</p>
+    <p>Patient Panel | All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
