@@ -1,6 +1,8 @@
-/* Common CSS for Hospital Management System */
 
-/* ========== 1. Basic Design ========== */
+
+
+/* 1. Basic Design */
+
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +18,10 @@ body {
     flex-direction: column;
 }
 
+h1, h2, h3, h4 {
+    color: #176b70;
+}
+
 input, select, textarea {
     padding: 10px;
     border: 1px solid #ccc;
@@ -23,16 +29,18 @@ input, select, textarea {
     font-family: Arial, sans-serif;
 }
 
-/* ========== 2. Header ========== */
+/* 2. Common Header */
+
 .main-header {
     background-color: #176b70;
     color: white;
-    text-align: center;
     padding: 25px;
+    text-align: center;
 }
 
 .main-header h1 {
     color: white;
+    font-size: 28px;
     margin-bottom: 8px;
 }
 
@@ -41,7 +49,8 @@ input, select, textarea {
     font-size: 15px;
 }
 
-/* ========== 3. Navigation Bar ========== */
+/* 3. Navigation Bar */
+
 .navbar {
     background-color: white;
     padding: 18px;
@@ -54,22 +63,38 @@ input, select, textarea {
     color: #176b70;
     font-weight: bold;
     margin: 0 15px;
+    font-size: 15px;
 }
 
 .navbar a:hover {
     color: #168b91;
+    text-decoration: underline;
 }
 
-/* ========== 4. Page Title ========== */
+/* 4. Page Title */
+
 .page-title {
     color: #176b70;
     text-align: center;
     margin: 25px 0;
 }
 
-/* ========== 5. Login and Submit Buttons ========== */
-.submit-btn,
-.login-btn {
+/* 5. Common Buttons */
+
+button {
+    background-color: #168b91;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #116b70;
+}
+
+.submit-btn, .login-btn {
     background-color: #168b91;
     color: white;
     border: none;
@@ -78,12 +103,12 @@ input, select, textarea {
     cursor: pointer;
 }
 
-.submit-btn:hover,
-.login-btn:hover {
+.submit-btn:hover, .login-btn:hover {
     background-color: #116b70;
 }
 
-/* ========== 6. Back Button ========== */
+/* 6. Back Button */
+
 .back-btn {
     display: inline-block;
     background-color: #176b70;
@@ -97,21 +122,23 @@ input, select, textarea {
     background-color: #116b70;
 }
 
-/* ========== 7. Footer ========== */
+/* 7. Common Footer */
+
 .main-footer {
     background-color: #176b70;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     margin-top: 40px;
 }
 
 .main-footer p {
     color: white;
-    margin: 5px;
+    margin: 8px;
 }
 
-/* ========== 8. Home Page ========== */
+
+
 .welcome-section {
     background-color: white;
     margin: 30px 40px;
@@ -122,7 +149,6 @@ input, select, textarea {
 }
 
 .welcome-section h2 {
-    color: #176b70;
     font-size: 28px;
     margin-bottom: 12px;
 }
@@ -132,14 +158,12 @@ input, select, textarea {
     font-size: 16px;
 }
 
-.services-section,
-.quick-section {
+.services-section, .quick-section {
     margin: 30px 40px;
 }
 
 .services-section > h3,
 .quick-section h3 {
-    color: #176b70;
     font-size: 24px;
     margin-bottom: 20px;
 }
@@ -163,7 +187,6 @@ input, select, textarea {
 }
 
 .service-card h3 {
-    color: #176b70;
     font-size: 19px;
     margin-bottom: 12px;
 }
@@ -205,22 +228,74 @@ input, select, textarea {
     background-color: #168b91;
 }
 
-/* ========== 9. Form Pages (Login, Register, Booking, Profile) ========== */
-.login-page,
-.register-page,
-.booking-page,
-.profile-page,
-.appointments-page {
+
+.login-page {
     min-height: 70vh;
     padding: 40px 15px;
 }
 
-.login-container,
-.register-container,
-.booking-container,
-.profile-container,
-.appointments-container {
+.login-container {
     background-color: white;
+    width: 400px;
+    max-width: 90%;
+    margin: auto;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.login-header h1 {
+    margin-bottom: 10px;
+}
+
+.login-header p {
+    color: #666;
+}
+
+.login-form label {
+    display: inline-block;
+    font-weight: bold;
+    color: #176b70;
+    margin-bottom: 5px;
+}
+
+.login-form input {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.login-form button {
+    margin-top: 10px;
+}
+
+.login-container > p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-container a {
+    color: #168b91;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+
+.register-page {
+    min-height: 70vh;
+    padding: 40px 15px;
+}
+
+.register-container {
+    background-color: white;
+    width: 550px;
     max-width: 100%;
     margin: auto;
     padding: 35px;
@@ -228,99 +303,145 @@ input, select, textarea {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-.login-container    { width: 400px; }
-.register-container { width: 550px; }
-.booking-container  { width: 600px; }
-.profile-container  { width: 550px; }
-.appointments-container { max-width: 1100px; }
-
-.login-header,
-.register-header,
-.booking-header,
-.profile-header,
-.appointments-header {
+.register-header {
     text-align: center;
     margin-bottom: 25px;
 }
 
-.login-header h1,
-.register-header h1,
-.booking-header h1,
-.profile-header h1,
-.appointments-header h1 {
-    color: #176b70;
+.register-header h1 {
     margin-bottom: 10px;
 }
 
-.login-header p,
-.register-header p,
-.booking-header p,
-.profile-header p,
-.appointments-header p {
+.register-header p {
     color: #666;
 }
 
-.login-form label,
-.register-form label,
-.booking-form label,
-.profile-form label {
+.register-form label {
     display: inline-block;
     font-weight: bold;
     color: #176b70;
     margin-bottom: 5px;
 }
 
-.login-form input,
 .register-form input,
 .register-form select,
-.register-form textarea,
-.booking-form input,
-.booking-form select,
-.booking-form textarea,
-.profile-form input,
-.profile-form textarea {
+.register-form textarea {
     width: 100%;
     margin-bottom: 5px;
 }
 
-.register-form textarea,
-.booking-form textarea,
-.profile-form textarea {
+.register-form textarea {
     resize: vertical;
 }
 
-.login-form .submit-btn,
-.login-form .login-btn,
-.register-form .submit-btn,
-.booking-form .submit-btn,
-.profile-form .submit-btn {
+.register-form button {
     margin-top: 10px;
 }
 
-.login-container > p,
-.register-container > p,
-.booking-container > p,
-.profile-container > p {
+.register-container > p {
     text-align: center;
     margin-top: 20px;
 }
 
-.login-container a,
-.register-container a,
-.booking-container a,
-.profile-container a {
+.register-container a {
     color: #168b91;
     text-decoration: none;
 }
 
-.login-container a:hover,
-.register-container a:hover,
-.booking-container a:hover,
-.profile-container a:hover {
+.register-container a:hover {
     text-decoration: underline;
 }
 
-/* ========== 10. Appointments Table ========== */
+
+
+.booking-page {
+    min-height: 70vh;
+    padding: 40px 15px;
+}
+
+.booking-container {
+    background-color: white;
+    width: 600px;
+    max-width: 100%;
+    margin: auto;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.booking-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.booking-header h1 {
+    margin-bottom: 10px;
+}
+
+.booking-header p {
+    color: #666;
+}
+
+.booking-form label {
+    display: inline-block;
+    font-weight: bold;
+    color: #176b70;
+    margin-bottom: 5px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.booking-form textarea {
+    resize: vertical;
+}
+
+.booking-form button {
+    margin-top: 10px;
+}
+
+.booking-container > p {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.booking-container a {
+    color: #168b91;
+    text-decoration: none;
+}
+
+
+.appointments-page {
+    min-height: 70vh;
+    padding: 40px 20px;
+}
+
+.appointments-container {
+    background-color: white;
+    max-width: 1100px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.appointments-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.appointments-header h1 {
+    margin-bottom: 10px;
+}
+
+.appointments-header p {
+    color: #666;
+}
+
 .table-container {
     width: 100%;
     overflow-x: auto;
@@ -354,7 +475,6 @@ input, select, textarea {
     flex-wrap: wrap;
 }
 
-/* ========== Admin Panel Specific Styles ========== */
 .admin-container {
     max-width: 480px;
     width: 100%;
@@ -432,7 +552,6 @@ input, select, textarea {
     position: relative;
     z-index: 1;
 }
-/* ========== Add Doctor Page Styles ========== */
 .doctor-container {
     max-width: 560px;
     width: 100%;
@@ -500,7 +619,6 @@ input, select, textarea {
     object-fit: contain;
 }
 
-/* ========== Manage Doctors Page Styles ========== */
 .manage-container {
     max-width: 960px;
     width: 100%;
@@ -531,7 +649,6 @@ input, select, textarea {
     margin-top: 24px;
 }
 
-/* ========== Check Details Page Styles ========== */
 .details-container {
     max-width: 1100px;
     width: 100%;
@@ -565,4 +682,152 @@ input, select, textarea {
 
 .details-container .back-btn {
     margin-top: 24px;
+}
+.appointment-links a {
+    background-color: #168b91;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.appointment-links a:hover {
+    background-color: #116b70;
+}
+
+
+
+.profile-page {
+    min-height: 70vh;
+    padding: 40px 15px;
+}
+
+.profile-container {
+    background-color: white;
+    width: 550px;
+    max-width: 100%;
+    margin: auto;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.profile-header h1 {
+    margin-bottom: 10px;
+}
+
+.profile-header p {
+    color: #666;
+}
+
+.profile-form label {
+    display: inline-block;
+    font-weight: bold;
+    color: #176b70;
+    margin-bottom: 5px;
+}
+
+.profile-form input,
+.profile-form textarea {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.profile-form textarea {
+    resize: vertical;
+}
+
+.profile-form button {
+    margin-top: 10px;
+}
+
+.profile-container > p {
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+.doctor-container,
+.prescription-container {
+    width: 85%;
+    margin: 30px auto;
+}
+
+.doctor-card,
+.prescription-card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.doctor-card h3,
+.prescription-card h3 {
+    margin-bottom: 15px;
+}
+
+.doctor-card p,
+.prescription-card p {
+    margin: 10px 0;
+}
+
+.doctor-card .back-btn {
+    margin-top: 10px;
+}
+
+
+.prescription-card h4 {
+    margin: 15px 0;
+}
+
+.prescription-card table {
+    border-collapse: collapse;
+    margin: 15px 0;
+    background-color: white;
+}
+
+.prescription-card th {
+    background-color: #176b70;
+    color: white;
+}
+
+.prescription-card th,
+.prescription-card td {
+    padding: 10px;
+    text-align: left;
+}
+
+/
+
+@media (max-width: 768px) {
+
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome-section,
+    .services-section,
+    .quick-section {
+        margin: 20px;
+    }
+
+    .navbar a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .doctor-container,
+    .prescription-container {
+        width: 95%;
+    }
+
+    .appointments-container {
+        padding: 15px;
+    }
 }
