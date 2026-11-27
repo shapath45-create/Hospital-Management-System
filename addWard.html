@@ -13,31 +13,34 @@
     </header>
 
     <div class="doctor-container">
-        <form action="admin.html" method="get">
+        <form action="admin.html" method="get" onsubmit="return validateWardForm()">
             <table class="form-table">
                 <tr>
                     <td><label for="wardName">Ward Name:</label></td>
                     <td>
                         <input type="text" id="wardName" name="wardName" placeholder="Enter ward name" required>
+                        <span id="wardNameError" class="error-text"></span>
                     </td>
                 </tr>
                 <tr>
                     <td><label for="wardCode">Ward Code:</label></td>
                     <td>
                         <input type="text" id="wardCode" name="wardCode" placeholder="Enter ward code (e.g., WARD-01)" required>
+                        <span id="wardCodeError" class="error-text"></span>
                     </td>
                 </tr>
                 <tr>
                     <td><label for="totalBeds">Total Beds:</label></td>
                     <td>
                         <input type="number" id="totalBeds" name="totalBeds" min="1" placeholder="Enter total number of beds" required>
+                        <span id="wardBedsError" class="error-text"></span>
                     </td>
                 </tr>
                 <tr>
                     <td></td>
                     <td class="btn-group">
                         <input type="submit" class="submit-btn" value="Save">
-                        <input type="reset" class="reset-btn" value="Reset">
+                        <input type="reset" class="reset-btn" value="Reset" onclick="resetWardFormDOM()">
                     </td>
                 </tr>
             </table>
@@ -52,6 +55,8 @@
         <p>&copy; 2026 Hazratt Muhammad (sa.) International Hospital.</p>
         <p>All rights reserved</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
