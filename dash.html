@@ -1,32 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Doctor Dashboard</title>
-  <link rel="stylesheet" href="dash.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard</title>
+    <link rel="stylesheet" href="common.css">
 </head>
 <body>
 
-    <h2>Doctor Dashboard</h2>
+    <header class="doctor-header">
 
-    <p>Welcome, Doctor!</p>
+        <div class="doctor-info">
+            <h1>Asif Khandaker</h1>
+            <p>MBBS, FCPS | Medicine Department</p>
+            <span>Doctor Portal</span>
+        </div>
 
-    <button type="button" onclick="window.location.href='app.html'">
-        Appointment
-    </button>
+        <button type="button" class="logout-btn"
+            onclick="window.location.href='login (1).html'">
+            Logout
+        </button>
 
-    <br><br>
+    </header>
 
-    <button type="button" onclick="window.location.href='prescribe.html'">
-        Prescribe Medicine
-    </button>
+    <nav class="navbar">
 
-    <br><br>
+        <a href="app.html">Check Appointments</a>
 
-    <button type="button" onclick="window.location.href='login (1).html'">
-        Logout
-    </button>
+        <a href="prescribe.html">Prescribe Medicine</a>
+
+        <a href="history.html">Check Treatment History</a>
+
+        <a href="intake.html">Intake & Vitals</a>
+
+    </nav>
+
+    <main class="dashboard-content">
+
+        <h2>Doctor Dashboard</h2>
+
+        <p class="welcome-text">
+                    Welcome, Doctor! 
+        Manage your patients and medical activities.
+        </p>
+
+        <div class="dashboard-card">
+
+            <h3>Doctor Portal</h3>
+         </div>
+
+    </main>
 
 </body>
 </html>
