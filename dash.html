@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doctor Dashboard</title>
+
     <link rel="stylesheet" href="common.css">
 </head>
+
 <body>
 
-    <header class="doctor-header">
+    <header class="doctor-header" style="text-align: center;">
 
         <div class="doctor-info">
             <h1>Asif Khandaker</h1>
@@ -23,33 +26,46 @@
 
     </header>
 
-    <nav class="navbar">
-
-        <a href="app.html">Check Appointments</a>
-
-        <a href="prescribe.html">Prescribe Medicine</a>
-
-        <a href="history.html">Check Treatment History</a>
-
-        <a href="intake.html">Intake & Vitals</a>
-
-    </nav>
-
-    <main class="dashboard-content">
+    <form class="dashboard-content" style="text-align: center;">
 
         <h2>Doctor Dashboard</h2>
 
         <p class="welcome-text">
-                    Welcome, Doctor! 
-        Manage your patients and medical activities.
+            Welcome, Doctor!
+            Manage your patients and medical activities.
         </p>
 
-        <div class="dashboard-card">
+        <div class="dashboard-buttons" style="text-align: center;">
 
-            <h3>Doctor Portal</h3>
-         </div>
+            <button type="button"
+                onclick="window.location.href='app.html'">
+                Check Appointments
+            </button>
 
-    </main>
+            <button type="button"
+                onclick="window.location.href='prescribe.html'">
+                Prescribe Medicine
+            </button>
+
+            <button type="button"
+                onclick="window.location.href='history.html'">
+                Check Treatment History
+            </button>
+
+            <button type="button"
+                onclick="window.location.href='intake.html'">
+                Intake & Vitals
+            </button>
+
+            <button type="button"
+                onclick="window.location.href='lab.html'">
+                Lab & Test Review
+            </button>
+
+        </div>
+
+    </form>
 
 </body>
+
 </html>

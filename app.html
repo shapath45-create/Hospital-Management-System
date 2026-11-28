@@ -1,47 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Check Appointments</title>
-    <link rel="stylesheet" href="common.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check Appointments</title>
+ <link rel="stylesheet" href="common.css">
 </head>
-<body>
 
-    <h2>Check Appointments</h2>
+<body style="text-align: center;">
 
-    <form method="POST">
+<h2>Check Appointments</h2>
 
-        <div>
-            <label for="patient_id">Patient ID:</label>
-            <input type="text" id="patient_id" name="patient_id" required>
-        </div>
+<form method="POST">
 
-        <br>
+<div>
+<label for="patient_id">Patient ID:</label>
+<input type="text" id="patient_id" name="patient_id"
+style="display: block; margin: auto;" required>
+</div>
 
-        <div>
-            <label for="appointment_date">Appointment Date:</label>
-            <input type="date" id="appointment_date" name="appointment_date" required>
-        </div>
+<br>
 
-        <br>
+<div>
+<label for="appointment_date">Appointment Date:</label>
+<input type="date" id="appointment_date" name="appointment_date"
+style="display: block; margin: auto;" required>
+</div>
 
-        <div>
-            <label for="appointment_time">Appointment Time:</label>
-            <input type="time" id="appointment_time" name="appointment_time" required>
-        </div>
+<br>
 
-        <br>
+<div>
+<label for="appointment_time">Appointment Time:</label>
+<input type="time" id="appointment_time" name="appointment_time"
+style="display: block; margin: auto;" required>
+</div>
 
-        <button type="submit">Check Appointment</button>
+<br>
 
-    </form>
+<button type="submit">Check Appointment</button>
 
-    <br>
+</form>
 
-    <button type="button" onclick="window.location.href='dash.html'">
-        Back
-    </button>
+<br>
+
+<button type="button" onclick="window.location.href='dash.html'">
+Back
+</button>
 
 </body>
 </html>
