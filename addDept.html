@@ -13,31 +13,34 @@
     </header>
 
     <div class="doctor-container">
-        <form action="admin.html" method="get">
+        <form action="admin.html" method="get" onsubmit="return validateDepartmentForm()">
             <table class="form-table">
                 <tr>
                     <td><label for="deptName">Department Name:</label></td>
                     <td>
                         <input type="text" id="deptName" name="deptName" placeholder="Enter department name" required>
+                        <span id="deptNameError" class="error-text"></span>
                     </td>
                 </tr>
                 <tr>
                     <td><label for="deptCode">Department Code:</label></td>
                     <td>
                         <input type="text" id="deptCode" name="deptCode" placeholder="Enter department code (e.g., DEPT-01)" required>
+                        <span id="deptCodeError" class="error-text"></span>
                     </td>
                 </tr>
                 <tr>
                     <td><label for="deptHead">Head of Department:</label></td>
                     <td>
                         <input type="text" id="deptHead" name="deptHead" placeholder="Enter head of department name" required>
+                        <span id="deptHeadError" class="error-text"></span>
                     </td>
                 </tr>
                 <tr>
                     <td></td>
                     <td class="btn-group">
                         <input type="submit" class="submit-btn" value="Save">
-                        <input type="reset" class="reset-btn" value="Reset">
+                        <input type="reset" class="reset-btn" value="Reset" onclick="resetDepartmentFormDOM()">
                     </td>
                 </tr>
             </table>
@@ -52,6 +55,8 @@
         <p>&copy; 2026 Hazratt Muhammad (sa.) International Hospital.</p>
         <p>All rights reserved</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>

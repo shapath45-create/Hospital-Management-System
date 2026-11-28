@@ -13,9 +13,9 @@
     </header>
 
     <div class="details-container">
-        <form class="search-box" action="#" method="get">
+        <form class="search-box" action="#" method="get" onsubmit="return searchPatientDetails(event)">
             <label for="patientId">Patient ID:</label>
-            <input type="text" id="patientId" name="patientId" placeholder="Enter Patient ID (e.g., PAT-301)">
+            <input type="text" id="patientId" name="patientId" placeholder="Enter Patient ID (e.g., PAT-301)" oninput="searchPatientDetails()">
             <button type="submit" class="submit-btn">Search</button>
         </form>
 
@@ -71,6 +71,7 @@
                     </tr>
                 </tbody>
             </table>
+            <span id="patientNoResult" class="error-text"></span>
         </div>
 
         <a href="admin.html" class="back-btn" aria-label="Back to Admin Panel" title="Back to Admin Panel">
@@ -82,6 +83,8 @@
         <p>&copy; 2026 Hazratt Muhammad (sa.) International Hospital.</p>
         <p>All rights reserved</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
