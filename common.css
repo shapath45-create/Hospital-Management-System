@@ -814,7 +814,376 @@ button:hover {
     }
 }
 
-/* Check Details Style Search Bar */
+/* Dashboard */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f6fa;
+    color: #334155;
+}
+
+.doctor-header {
+    background-color: #176b70;
+    color: white;
+    padding: 25px 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.doctor-info h1 {
+    margin: 0 0 8px;
+    font-size: 27px;
+}
+
+.doctor-info p {
+    margin: 0 0 8px;
+    font-size: 15px;
+    color: #e0f2f1;
+}
+
+.doctor-info span {
+    font-size: 13px;
+    color: #c5e8e7;
+}
+
+/* Logout Button */
+.logout-btn {
+    background-color: #dc5353;
+    color: white;
+    border: none;
+    padding: 11px 25px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: #bd3838;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 16px 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #334155;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 17px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.navbar a:hover {
+    background-color: #e6f4f4;
+    color: #176b70;
+}
+
+/* Dashboard Content */
+.dashboard-content {
+    max-width: 1150px;
+    margin: 40px auto;
+    padding: 0 25px;
+}
+
+.dashboard-content h2 {
+    color: #123b5d;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.welcome-text {
+    color: #64748b;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+/* Dashboard Card */
+.dashboard-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.dashboard-card h3 {
+    color: #176b70;
+    margin-top: 0;
+}
+
+.dashboard-card p {
+    color: #64748b;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .doctor-header {
+        padding: 22px;
+        gap: 20px;
+    }
+
+    .doctor-info h1 {
+        font-size: 22px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .navbar a {
+        text-align: center;
+    }
+
+    .dashboard-content {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 450px) {
+    .doctor-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logout-btn {
+        width: 100%;
+    }
+}
+
+
+/*Check Appointment*/
+*
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf7f7;
+    color: #333;
+    text-align: center;
+    padding: 30px;
+}
+
+h2 {
+    color: #176b70;
+    margin-bottom: 25px;
+}
+
+form {
+    background-color: white;
+    width: 350px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    color: #176b70;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #168b91;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #116b70;
+}
+
+
+
+/*History*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf7f7;
+    color: #333;
+    margin: 0;
+    padding: 30px 20px;
+}
+
+.medical-history-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 35px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.medical-history-container h2 {
+    text-align: center;
+    color: #176b70;
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e0eeee;
+}
+
+fieldset {
+    border: 1px solid #cbdede;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 0 0 25px;
+}
+
+legend {
+    color: #176b70;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #176b70;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+
+textarea {
+    display: block;
+    width: 100%;
+    min-height: 70px;
+    padding: 12px;
+    border: 1px solid #cbdede;
+    border-radius: 6px;
+    background-color: #fcfefe;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    resize: vertical;
+    transition: border-color 0.2s;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #168b91;
+    box-shadow: 0 0 4px rgba(22, 139, 145, 0.2);
+}
+
+fieldset .grid-2 label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #168b91;
+    cursor: pointer;
+}
+
+.form-actions {
+    text-align: right;
+    margin-top: 25px;
+}
+
+button {
+    background-color: #168b91;
+    color: white;
+    border: none;
+    padding: 13px 28px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #116b70;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .medical-history-container {
+        padding: 25px 20px;
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    fieldset {
+        padding: 20px 15px;
+    }
+
+    .form-actions {
+        text-align: center;
+    }
+
+    button {
+        width: 100%;
+    }
+
 .search-container {
     display: flex;
     justify-content: center;
@@ -834,22 +1203,6 @@ button:hover {
     font-size: 14px;
     outline: none;
 }
-
-/*.search-container input[type="text"]:focus,
-.search-container input[type="search"]:focus {
-    border-color: #2563eb;
-}
-
-.search-btn {
-    padding: 9px 18px;
-    background-color: #2563eb;
-    color: #ffffff;
-    border: none;
-    border-radius: 6px;
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
-} */
 
 .search-btn:hover {
     background-color: #1d4ed8;
